@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>DigDeeep — Support</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1c1c1e; --muted: #6b6b70;
+    --card: #f5f5f7; --stroke: #e2e2e6; --accent: #3a7d2c; --link: #2c6e1f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f0f10; --fg: #ececf0; --muted: #9a9aa2;
+      --card: #1a1a1d; --stroke: #2a2a2e; --accent: #7bc96f; --link: #9fe08f;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 0 20px;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 0 80px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 4px; letter-spacing: -0.02em; }
+  h2 { font-size: 20px; margin: 40px 0 10px; letter-spacing: -0.01em; }
+  p, li { color: var(--fg); }
+  a { color: var(--link); text-underline-offset: 2px; }
+  .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; margin: 0 0 12px; }
+  .updated { color: var(--muted); font-size: 14px; margin: 0 0 8px; }
+  .lede { color: var(--muted); font-size: 17px; }
+  .card { background: var(--card); border: 1px solid var(--stroke); border-radius: 14px; padding: 16px 20px; margin: 18px 0; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  strong { font-weight: 650; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--stroke); color: var(--muted); font-size: 14px; }
+  code { background: var(--card); border: 1px solid var(--stroke); border-radius: 6px; padding: 1px 6px; font-size: 0.9em; }
+  nav.toc { background: var(--card); border: 1px solid var(--stroke); border-radius: 14px; padding: 16px 20px; margin: 18px 0; }
+  nav.toc p { margin: 0 0 8px; font-weight: 650; }
+  nav.toc ul { margin: 0; padding-left: 20px; columns: 2; }
+  nav.toc li { margin: 4px 0; }
+  dt { font-weight: 650; margin-top: 14px; }
+  dd { margin: 4px 0 0; color: var(--fg); }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">DigDeeep</p>
+  <h1>Support</h1>
+  <p class="lede">DigDeeep uses your iPhone's front camera to count your push-ups in real time,
+    completely on your device. This page helps you get set up and answers common questions.</p>
+
+  <nav class="toc">
+    <p>On this page</p>
+    <ul>
+      <li><a href="#getting-started">Getting Started</a></li>
+      <li><a href="#rep-counting">How Rep Counting Works</a></li>
+      <li><a href="#modes">The Three Modes</a></li>
+      <li><a href="#subscriptions">Subscriptions, Trial &amp; Restore</a></li>
+      <li><a href="#ranking">Ranking &amp; Percentile</a></li>
+      <li><a href="#privacy">Privacy</a></li>
+      <li><a href="#faq">Troubleshooting / FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h2 id="getting-started">Getting Started</h2>
+  <ul>
+    <li>Requires an iPhone running iOS 17 or later. Push-up counting needs a real device with a
+      working front camera — it does not run on the Simulator.</li>
+    <li>Sign in with Apple the first time you open the app. This is the only sign-in method; no
+      password is needed.</li>
+    <li>Prop your phone up facing you (on the floor or against something), in portrait, with the
+      front camera pointing at you and your upper body in frame.</li>
+    <li>Grant camera permission when asked. Video is used only to count reps and never leaves your
+      phone.</li>
+    <li>Every session starts with a 6-second lead-in (a short countdown) so you have time to get
+      into position. Counting begins when the countdown ends.</li>
+  </ul>
+
+  <h2 id="rep-counting">How Rep Counting Works</h2>
+  <ul>
+    <li>DigDeeep uses Apple's on-device Vision body-pose tracking. It watches the descent of your
+      chest and shoulders to detect a full down-and-up push-up.</li>
+    <li>Keep your upper body — head, shoulders, and torso — in the camera frame. Good, even lighting
+      helps a lot.</li>
+    <li>Reps that don't go deep enough don't count; you may see a gentle "go lower" prompt.</li>
+    <li>If you stall at the bottom of a hard rep and the camera briefly loses you, DigDeeep still
+      credits that rep on the way back up — the hardest rep of the set is never punished.</li>
+    <li>If tracking is lost you'll see "Make sure your full body is visible." Reposition so your
+      upper body is in frame and counting resumes automatically.</li>
+  </ul>
+
+  <h2 id="modes">The Three Modes</h2>
+  <ul>
+    <li><strong>Countdown</strong> — set a time, and push until the clock runs out.</li>
+    <li><strong>Goal</strong> — pick a target number of reps and race the stopwatch to reach it.</li>
+    <li><strong>Dig Deeep!</strong> — open-ended; go until you tap Stop.</li>
+  </ul>
+
+  <h2 id="subscriptions">Subscriptions, Trial &amp; Restore</h2>
+  <ul>
+    <li>New users get a 7-day free trial with everything unlocked (all modes, all durations).</li>
+    <li>After the trial, the 1-minute Countdown stays free forever, including your streak, daily
+      totals, weekly chart, lifetime total, and recent history.</li>
+    <li>DigDeeep Pro unlocks every mode and duration, your age/sex ranking, personal-best detail
+      pages, and pacing analytics. Pricing: Monthly $1.99, Yearly $14.99 (save ~37% vs monthly), or
+      Lifetime $29.99 one-time.</li>
+    <li>Restore Purchases: open Settings inside the app and tap Restore Purchases. Make sure you're
+      signed in with the same Apple ID you purchased with.</li>
+    <li>Manage or cancel a subscription in the iOS Settings app: tap your name, then Subscriptions.
+      Subscriptions auto-renew unless canceled at least 24 hours before the period ends.</li>
+    <li>Your trial and purchase status follow your Apple ID, so reinstalling or switching devices
+      keeps your access.</li>
+  </ul>
+
+  <h2 id="ranking">Ranking &amp; Percentile</h2>
+  <ul>
+    <li>Ranking (Pro) compares your best 60-second Countdown effort against approximate benchmarks
+      for your age and sex and shows an approximate "top X%".</li>
+    <li>It is a rough guide for general comparison only — an approximate estimate, not a medical or
+      professional fitness assessment.</li>
+  </ul>
+
+  <h2 id="privacy">Privacy</h2>
+  <ul>
+    <li>All camera and pose analysis happens entirely on your device, in real time. No video, image,
+      or frame is ever stored or transmitted.</li>
+    <li>DigDeeep has no ads and no third-party tracking. The only data leaving the app is for Sign in
+      with Apple and subscription handling.</li>
+    <li>Full details: <a href="https://dexnood3000.github.io/digdeeep-legal/">Privacy Policy</a>.</li>
+  </ul>
+
+  <h2 id="faq">Troubleshooting / FAQ</h2>
+  <div class="card">
+    <dl>
+      <dt>"Reps aren't counting."</dt>
+      <dd>Make sure you're on a real iPhone (not the Simulator), your upper body is in the
+        front-camera frame, and lighting is good. Prop the phone so your head, shoulders and torso
+        are visible.</dd>
+
+      <dt>"It says my full body isn't visible."</dt>
+      <dd>Reposition so your upper body is in frame; counting resumes on its own.</dd>
+
+      <dt>"Camera unavailable."</dt>
+      <dd>The Simulator has no camera — use a physical iPhone.</dd>
+
+      <dt>"I paid but Pro didn't unlock."</dt>
+      <dd>Open Settings &rarr; Restore Purchases, and confirm you're signed in with the Apple ID you
+        bought with. Entitlements can take a moment to sync.</dd>
+
+      <dt>"My streak reset."</dt>
+      <dd>The daily target is 20 reps in a day, any mode; a streak is consecutive days meeting it.
+        Missing a full day resets it.</dd>
+
+      <dt>"Where's my old history?"</dt>
+      <dd>The 5 most recent sessions are shown in full, but your daily totals, streak, lifetime
+        total, and personal bests are kept forever.</dd>
+    </dl>
+  </div>
+
+  <h2 id="contact">Contact</h2>
+  <p>Questions or issues? Email <a href="mailto:hkdavidr@icloud.com">hkdavidr@icloud.com</a> and
+    we'll help.</p>
+
+  <footer>
+    DigDeeep &middot; <a href="https://dexnood3000.github.io/digdeeep-legal/">Privacy Policy</a>
+    &middot; Contact: <a href="mailto:hkdavidr@icloud.com">hkdavidr@icloud.com</a>
+    <br>&copy; 2026 DigDeeep
+  </footer>
+</main>
+</body>
+</html>
