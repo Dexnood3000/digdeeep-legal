@@ -43,7 +43,7 @@
 <main>
   <p class="eyebrow">DigDeeep</p>
   <h1>Privacy Policy</h1>
-  <p class="updated">Effective 27 August 2026</p>
+  <p class="updated">Effective 10 November 2026</p>
   <p class="lede">DigDeeep counts your push-ups using the front camera, entirely on your device.
     This policy explains exactly what the app does and does not collect.</p>
 
@@ -51,8 +51,9 @@
     <strong>The short version:</strong> your camera feed and body-pose analysis never leave your
     phone — no image, frame, or video is ever stored or transmitted. The only information that leaves
     your device is your sign-in identifier (Apple on iPhone, Google on Android) and your purchase
-    status, used solely to run your account and subscription. There are no analytics, ad, or tracking
-    tools of any kind.
+    status, used solely to run your account and subscription, plus — on iPhone only — optional,
+    pseudonymous usage analytics that you can turn off in Settings. The Android app has no analytics.
+    There are no ads and no cross-app tracking.
   </div>
 
   <h2>Who we are</h2>
@@ -80,6 +81,18 @@
     <li><strong>Purchase and subscription status.</strong> Whether you are on a trial, free, or paid
       plan, and which product you bought. This is handled through Apple or Google Play, and RevenueCat
       (see below).</li>
+    <li><strong>Usage analytics (iPhone only).</strong> The iPhone app sends pseudonymous usage
+      analytics through TelemetryDeck. These are product-interaction signals: which screens are viewed,
+      when sessions start and finish (with the mode and rep counts), onboarding steps, paywall views,
+      purchase outcomes, daily-task progress, and counts describing how well the rep counter is
+      tracking. Each signal also carries coarse context: your subscription tier, days since install,
+      time of day, and weekday. Signals are tied to a salted, one-way hash of your Apple ID identifier,
+      computed on your device (and hashed again by the TelemetryDeck SDK) — never the raw identifier,
+      your name, email, age, sex, or any text you type. Before you sign in, a random anonymous
+      per-install ID is used instead. Camera frames, images, video, and pose data are never part of
+      these signals. You can turn this off at any time in Settings &rarr; Privacy &rarr; <strong>Share
+      usage data</strong>; turning it off stops all sending immediately. The Android app has no
+      analytics.</li>
   </ul>
 
   <h2>Information stored only on your device</h2>
@@ -88,7 +101,7 @@
     SwiftData on iPhone, in a Room database on Android. This information is not uploaded to us.</p>
 
   <h2>Third-party services</h2>
-  <p>We rely on two providers, both used strictly to operate the app:</p>
+  <p>We rely on four providers, all used strictly to operate and improve the app:</p>
   <ul>
     <li><strong>Apple</strong> (iPhone) — for Sign in with Apple and App Store purchases. See
       <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</li>
@@ -97,11 +110,14 @@
     <li><strong>RevenueCat</strong> — to validate purchases and manage entitlements and trial state. It
       receives your sign-in identifier and purchase information. See
       <a href="https://www.revenuecat.com/privacy">RevenueCat's Privacy Policy</a>.</li>
+    <li><strong>TelemetryDeck</strong> (iPhone) — privacy-focused analytics provider that receives the
+      pseudonymous usage signals described above, and nothing else from the app. It can be turned off
+      in Settings. See <a href="https://telemetrydeck.com/privacy/">TelemetryDeck's Privacy Policy</a>.</li>
   </ul>
 
   <h2>What we do not do</h2>
   <ul>
-    <li>No analytics, advertising, or tracking SDKs. We do not track you across apps or websites.</li>
+    <li>No advertising or cross-app tracking SDKs. We do not track you across apps or websites, and we do not show a tracking prompt.</li>
     <li>No collection of health, photo, video, or camera data.</li>
     <li>No selling or sharing of personal data with advertisers or data brokers.</li>
   </ul>
